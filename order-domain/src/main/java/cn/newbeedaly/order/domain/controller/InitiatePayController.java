@@ -27,7 +27,11 @@ public class InitiatePayController implements InitiatePayClient {
     @Override
     public Boolean pay() {
         // 发起支付
-        return payClient.pay(new PaymentReqVO());
+        PaymentReqVO vo = new PaymentReqVO();
+        vo.setMerchantId("M-001");
+        vo.setOrderId("O-001");
+        vo.setPayAmount(1);
+        return payClient.pay(vo);
     }
 
 }

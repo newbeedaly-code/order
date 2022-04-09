@@ -27,7 +27,7 @@ mybatis-plus:
 # FeignClient日志
 logging:
   level:
-    cn.newbeedaly.order.open: debug
+    cn.newbeedaly.order: debug
 # eurekaServer配置
 eureka:
   client:
