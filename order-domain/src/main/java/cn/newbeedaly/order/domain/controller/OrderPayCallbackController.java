@@ -1,12 +1,12 @@
 package cn.newbeedaly.order.domain.controller;
 
-import cn.newbeedaly.order.api.client.PayCallbackClient;
+import cn.newbeedaly.order.api.client.OrderPayCallbackClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class PayCallbackController implements PayCallbackClient {
+public class OrderPayCallbackController implements OrderPayCallbackClient {
 
     Logger logger = LoggerFactory.getLogger(InitiatePayController.class);
 

@@ -2,8 +2,8 @@ package cn.newbeedaly.order.domain.controller;
 
 import cn.newbeedaly.order.api.client.InitiatePayClient;
 import cn.newbeedaly.pay.api.client.PayClient;
-import cn.newbeedaly.pay.api.vo.PaymentReqVO;
-import cn.newbeedaly.pay.api.vo.PaymentResVO;
+import cn.newbeedaly.pay.api.vo.req.PaymentReqVO;
+import cn.newbeedaly.pay.api.vo.res.PaymentResVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
