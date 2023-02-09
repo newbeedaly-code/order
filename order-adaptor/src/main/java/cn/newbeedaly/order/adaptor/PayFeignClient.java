@@ -4,7 +4,7 @@ import cn.newbeedaly.order.adaptor.config.DefaultFeignClientConfiguration;
 import cn.newbeedaly.pay.api.client.PayClient;
 import org.springframework.cloud.openfeign.FeignClient;
 
-@FeignClient(name = "pay", contextId = "PayFeignClient", configuration = DefaultFeignClientConfiguration.class)
+@FeignClient(url ="127.0.0.1:8000", name = "pay", contextId = "PayFeignClient", configuration = DefaultFeignClientConfiguration.class)
 public interface PayFeignClient extends PayClient {
 
 }

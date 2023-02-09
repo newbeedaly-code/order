@@ -5,12 +5,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/order")
 public interface InitiatePayClient {
 
-    @GetMapping("/pay/{key}")
+    @GetMapping("/order/pay/{key}")
     String get(@PathVariable("key") String key);
 
-    @PostMapping("/pay")
+    @PostMapping("/order/pay")
     Boolean pay();
 }
