@@ -18,9 +18,11 @@
     </parent>
     <groupId>cn.newbeedaly</groupId>
     <artifactId>order</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>${revision}</version>
 
     <properties>
+        <revision>1.0.0</revision>
+        <pay.version>1.0.0</pay.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <spring.cloud.version>Hoxton.SR1</spring.cloud.version>
@@ -29,6 +31,28 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>cn.newbeedaly</groupId>
+                <artifactId>order-api</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.newbeedaly</groupId>
+                <artifactId>order-adaptor</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.newbeedaly</groupId>
+                <artifactId>order-domain</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.newbeedaly</groupId>
+                <artifactId>pay-api</artifactId>
+                <version>${pay.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
