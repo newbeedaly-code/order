@@ -1,9 +1,9 @@
 package cn.newbeedaly.order.domain.controller;
 
+import cn.newbeedaly.order.adaptor.pay.PayFeignClient;
+import cn.newbeedaly.order.adaptor.pay.vo.req.PaymentReqVO;
+import cn.newbeedaly.order.adaptor.pay.vo.res.PaymentResVO;
 import cn.newbeedaly.order.api.client.InitiatePayClient;
-import cn.newbeedaly.pay.api.client.PayClient;
-import cn.newbeedaly.pay.api.vo.req.PaymentReqVO;
-import cn.newbeedaly.pay.api.vo.res.PaymentResVO;
 import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +16,7 @@ public class InitiatePayControllerOrder extends OrderBaseController implements I
     Logger logger = LoggerFactory.getLogger(InitiatePayControllerOrder.class);
 
     @Autowired
-    private PayClient payClient;
+    private PayFeignClient payClient;
 
     @Override
     public String get(String key) {

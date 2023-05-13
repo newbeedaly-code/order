@@ -17,17 +17,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>cn.newbeedaly</groupId>
-            <artifactId>pay-api</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>guava</artifactId>
-                    <groupId>com.google.guava</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
         <!--feignClient-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
